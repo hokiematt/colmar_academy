@@ -176,7 +176,7 @@ main {
 }
 
 /* school-info*/
-.school-info {
+#school-info {
   display: flex;
   background-color: #f2f2f2;
 }
@@ -264,12 +264,12 @@ main {
   color: red;
 }
 
-/* sunject-list */
-#subject-list {
+/* course-list */
+#course-list {
   background-color: #d9d9d9;
 }
 
-#subject-list h1 {
+#course-list h1 {
   font-size: 4rem;
   font-family: 'Libre Baskerville';
   font-weight: bold;
@@ -278,20 +278,20 @@ main {
   text-align: center;
 }
 
-.subjects {
+.courses {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 32px 72px;
 }
 
-.subject {
+.course {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
 }
 
-.subject img {
+.course img {
   height: auto;
   display: block;
 }
