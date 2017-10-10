@@ -73,11 +73,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  z-index: 5;
   width: 100%;
   height: 64px;
   font-size: 1.5rem;
-
-  border: 1px solid black;
+  background-color: white;
 }
 
 .logo {
@@ -85,8 +86,6 @@ header {
   flex-grow: 1;
   margin-left: 24px;
   font-size: 1.75rem;
-
-  border: 1px solid red;
 }
 
 .logo h2 {
@@ -102,8 +101,6 @@ nav {
   align-items: center;
   margin-right: 24px;
   height: 32px;
-
-  border: 1px solid blue;
 }
 
 .nav-icon {
@@ -117,11 +114,16 @@ nav li {
 
 nav li:last-child{
   margin-right: 0;
+  background-color: red;
+  color: white;
+  opacity: 0.9;
+  padding: 2px;
 }
 
 /* Main Section */
 main {
   border: 2px solid #737373;
+  padding-top: 64px;
 }
 
 /* banner */
@@ -129,7 +131,7 @@ main {
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: #c0c0c0;
+  background-color: #d9d9d9;
 }
 
 .banner-image {
@@ -152,7 +154,6 @@ main {
 
 .banner-text {
   text-align: left;
-  //font-family: 'Alegreya Sans';
   margin-bottom: 32px;
 }
 .banner-text h1 {
@@ -177,7 +178,7 @@ main {
 /* school-info*/
 .school-info {
   display: flex;
-
+  background-color: #f2f2f2;
 }
 
 .info-left-column {
@@ -186,7 +187,7 @@ main {
   width: 60%;
   overflow: hidden;
   padding: 32px 24px;
-  border-right: 1px solid black;
+  //border-right: 1px solid #d9d9d9;
 }
 
 .info-left-column img {
@@ -197,28 +198,102 @@ main {
 }
 
 .info-left-column h2 {
-  font-size: 2.75rem;
+  font-size: 3rem;
   font-weight: bold;
   padding-bottom: 24px;
 }
 
 .info-left-column .quote {
   font-size: 1.75rem;
-  font-family: 'Alegreya Sans';
   font-style: italic;
   padding-bottom: 32px;
 }
 
 .info-left-column p {
   font-size: 1.5rem;
-  font-family: 'Alegreya Sans'
 }
 
 .info-right-column {
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin: 32px 16px;
+  margin-top: 16px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  //overflow: hidden;
+  padding: 16px;
+}
+
+.info-box:hover {
+  background-color: #d9d9d9;
+}
+
+.info-box img {
+  width: 35%;
+  height: auto;
+  display: block;
+}
+
+.info-text {
+  width: 65%;
+  margin-left: 16px;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.info-text h3 {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.info-text p {
+  color: #595959;
+  margin: 8px 0;
+  padding-right: 8px;
+}
+
+.info-text a {
+  color: red;
+}
+
+.info-text a:visited {
+  color: red;
+}
+
+/* sunject-list */
+#subject-list {
+  background-color: #d9d9d9;
+}
+
+#subject-list h1 {
+  font-size: 4rem;
+  font-family: 'Libre Baskerville';
+  font-weight: bold;
+  padding-top: 32px;
+  //width: 100%;
+  text-align: center;
+}
+
+.subjects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 72px;
+}
+
+.subject {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.subject img {
+  height: auto;
+  display: block;
 }
 
 /* breakpoint control */
@@ -234,6 +309,12 @@ main {
   }
   .banner-text p {
     font-size: 1.5rem;
+  }
+  .info-text {
+    font-size: 1.25rem;
+  }
+  .info-text h3 {
+    font-size: 1.75rem;
   }
 }
 
